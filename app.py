@@ -92,7 +92,7 @@ def save_to_firestore(state, district, news_items):
 # ---------------- MAIN PIPELINE ----------------
 def main():
     # Load Excel file (replace with your file path)
-    df = pd.read_excel("districts.xlsx")
+    df = pd.read_excel("Districts.xlsx")
 
     # Normalize column names
     df.columns = df.columns.str.strip()
@@ -113,4 +113,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

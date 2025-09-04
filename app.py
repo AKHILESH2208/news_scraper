@@ -8,7 +8,7 @@ from firebase_admin import credentials, firestore
 
 
 load_dotenv()
-db_key=os.getenv("db_key")
+db_key=os.getenv("DB_KEY")
 
 firebase_key=json.loads(db_key)
 
@@ -113,3 +113,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
